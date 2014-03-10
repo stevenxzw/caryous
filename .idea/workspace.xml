@@ -23,55 +23,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2014-02-20-record-query.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/gitcode/seo-query/_posts/2014-02-20-record-query.html">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="785" selection-end="957" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="1121">
+            <state line="96" column="0" selection-start="2272" selection-end="2272" vertical-scroll-proportion="0.16788322" vertical-offset="1755" max-vertical-offset="2527">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2014-02-20-ranking-query.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/gitcode/seo-query/_posts/2014-02-20-ranking-query.html">
+      <file leaf-file-name="db.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/db.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="18" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1311">
+            <state line="238" column="0" selection-start="12662" selection-end="12662" vertical-scroll-proportion="0.0" vertical-offset="4256" max-vertical-offset="39748">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="operations.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/gitcode/seo-query/_includes/operations.html">
+      <file leaf-file-name="query.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/collection/query.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
+            <state line="147" column="0" selection-start="5087" selection-end="5087" vertical-scroll-proportion="0.0" vertical-offset="2630" max-vertical-offset="3002">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/gitcode/seo-query/_layouts/default.html">
+      <file leaf-file-name="cursor.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/cursor.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="912">
+            <state line="714" column="0" selection-start="28286" selection-end="28286" vertical-scroll-proportion="0.0" vertical-offset="13566" max-vertical-offset="19266">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://E:/gitcode/seo-query/js/base.js">
+      <file leaf-file-name="base.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="8" selection-start="64" selection-end="64" vertical-scroll-proportion="0.14221556" vertical-offset="0" max-vertical-offset="7220">
+            <state line="446" column="0" selection-start="12579" selection-end="12579" vertical-scroll-proportion="0.0" vertical-offset="8474" max-vertical-offset="9671">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zore.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/gitcode/seo-query/js/zore.js">
+      <file leaf-file-name="mongoTest.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mongoTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="259" column="57" selection-start="8470" selection-end="8470" vertical-scroll-proportion="0.0" vertical-offset="4921" max-vertical-offset="6023">
+            <state line="42" column="60" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0" vertical-offset="532" max-vertical-offset="2109">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blog.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/blog.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="7" selection-start="262" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="475">
               <folding />
             </state>
           </provider>
@@ -80,34 +89,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="28" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="247">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/layout.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="28" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="475">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="7" selection-start="256" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="247" max-vertical-offset="1444">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Gruntfile.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://E:/gitcode/seo-query/Gruntfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="32" selection-start="788" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="1596">
+            <state line="3" column="13" selection-start="49" selection-end="49" vertical-scroll-proportion="-2.0357144" vertical-offset="0" max-vertical-offset="323">
               <folding />
             </state>
           </provider>
@@ -123,22 +105,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/data/blog.js" />
         <option value="$PROJECT_DIR$/views/layout.html" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="E:/gitcode/seo-query/_site/record-query.html" />
-        <option value="$PROJECT_DIR$/views/index.html" />
-        <option value="E:/gitcode/seo-query/_includes/base.js" />
-        <option value="E:/gitcode/seo-query/Gruntfile.js" />
-        <option value="E:/gitcode/seo-query/_includes/loading.html" />
+        <option value="$PROJECT_DIR$/../seo-query/_site/record-query.html" />
+        <option value="$PROJECT_DIR$/../seo-query/_includes/base.js" />
+        <option value="$PROJECT_DIR$/../seo-query/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/../seo-query/_includes/loading.html" />
         <option value="$PROJECT_DIR$/../gaofen/trunk/__ORG__/html/html_v5/static/js/sjsc.js" />
-        <option value="E:/gitcode/seo-query/_includes/operations.html" />
-        <option value="E:/gitcode/seo-query/_layouts/default.html" />
-        <option value="E:/gitcode/seo-query/_posts/2014-02-20-record-query.html" />
-        <option value="E:/gitcode/seo-query/_posts/2014-02-20-ranking-query.html" />
-        <option value="E:/gitcode/seo-query/js/base.js" />
+        <option value="$PROJECT_DIR$/../seo-query/_includes/operations.html" />
+        <option value="$PROJECT_DIR$/../seo-query/_layouts/default.html" />
+        <option value="$PROJECT_DIR$/../seo-query/_posts/2014-02-20-record-query.html" />
+        <option value="$PROJECT_DIR$/../seo-query/_posts/2014-02-20-ranking-query.html" />
+        <option value="$PROJECT_DIR$/../seo-query/js/base.js" />
+        <option value="$PROJECT_DIR$/data/blog.js" />
+        <option value="$PROJECT_DIR$/mongoTest.js" />
+        <option value="$PROJECT_DIR$/views/index.html" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -197,8 +179,46 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nodeExpress" />
+              <option name="myItemId" value="caryous" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caryous" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caryous" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caryous" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caryous" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caryous" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="caryous" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -212,7 +232,7 @@
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="E:/androidSpace/Atest/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
@@ -266,6 +286,23 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d971e839-53d2-42b3-abfd-b8b05ce878c2" name="Default" comment="" />
@@ -276,17 +313,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24982357" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15384616" sideWeight="0.8786611" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4445946" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20395201" sideWeight="0.61087865" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5453278" sideWeight="0.49964714" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12133891" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38912135" sideWeight="0.50035286" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38912135" sideWeight="0.49964714" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -338,106 +375,102 @@
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
+      <option name="time" value="23" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+    <entry file="file://$PROJECT_DIR$/../seo-query/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="503" />
+        <state line="34" column="32" selection-start="788" selection-end="794" vertical-scroll-proportion="0.19331396" vertical-offset="513" max-vertical-offset="1596" />
       </provider>
     </entry>
-    <entry file="file://E:/gitcode/seo-query/_site/record-query.html">
+    <entry file="file://$PROJECT_DIR$/../seo-query/js/zore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="564" selection-end="564" vertical-scroll-proportion="0.066086955" vertical-offset="228" max-vertical-offset="2679" />
+        <state line="259" column="57" selection-start="8470" selection-end="8470" vertical-scroll-proportion="0.0" vertical-offset="4921" max-vertical-offset="6023" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/../seo-query/_includes/operations.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="48" selection-start="111" selection-end="111" vertical-scroll-proportion="0.18905473" vertical-offset="0" max-vertical-offset="603" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="28" selection-start="117" selection-end="117" vertical-scroll-proportion="0.14393939" vertical-offset="0" max-vertical-offset="660" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../seo-query/_layouts/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="912" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../seo-query/_posts/2014-02-20-record-query.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="785" selection-end="957" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="1121" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../seo-query/_posts/2014-02-20-ranking-query.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="18" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1311" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../seo-query/js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="8" selection-start="64" selection-end="64" vertical-scroll-proportion="0.1380814" vertical-offset="0" max-vertical-offset="7220" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/blog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8" selection-start="467" selection-end="467" vertical-scroll-proportion="0.34660032" vertical-offset="0" max-vertical-offset="603" />
-      </provider>
-    </entry>
-    <entry file="file://E:/gitcode/seo-query/_includes/loading.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="39" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gaofen/trunk/__ORG__/html/html_v5/static/js/sjsc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="4491" selection-end="4491" vertical-scroll-proportion="0.25258493" vertical-offset="0" max-vertical-offset="677" />
-      </provider>
-    </entry>
-    <entry file="file://E:/gitcode/seo-query/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="32" selection-start="788" selection-end="794" vertical-scroll-proportion="0.0" vertical-offset="513" max-vertical-offset="1596">
+        <state line="10" column="7" selection-start="262" selection-end="269" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="475">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://E:/gitcode/seo-query/js/zore.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/collection/query.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="259" column="57" selection-start="8470" selection-end="8470" vertical-scroll-proportion="0.0" vertical-offset="4921" max-vertical-offset="6023">
+        <state line="147" column="0" selection-start="5087" selection-end="5087" vertical-scroll-proportion="0.0" vertical-offset="2630" max-vertical-offset="3002">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/connection/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="446" column="0" selection-start="12579" selection-end="12579" vertical-scroll-proportion="0.0" vertical-offset="8350" max-vertical-offset="9671">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/cursor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="714" column="0" selection-start="28286" selection-end="28286" vertical-scroll-proportion="0.0" vertical-offset="13276" max-vertical-offset="19266">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mongodb/lib/mongodb/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="238" column="0" selection-start="12662" selection-end="12662" vertical-scroll-proportion="0.0" vertical-offset="4256" max-vertical-offset="39748">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mongoTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="60" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="2147">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="247">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/gitcode/seo-query/_includes/operations.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="640">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="28" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="475">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/gitcode/seo-query/_layouts/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="734" selection-end="734" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="912">
+        <state line="3" column="13" selection-start="49" selection-end="49" vertical-scroll-proportion="-2.0357144" vertical-offset="0" max-vertical-offset="323">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="7" selection-start="256" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="776" max-vertical-offset="1444">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/gitcode/seo-query/_posts/2014-02-20-record-query.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="785" selection-end="957" vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="1121">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/gitcode/seo-query/_posts/2014-02-20-ranking-query.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="18" selection-start="891" selection-end="891" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1311">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/gitcode/seo-query/js/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="8" selection-start="64" selection-end="64" vertical-scroll-proportion="0.14221556" vertical-offset="0" max-vertical-offset="7220">
+        <state line="96" column="0" selection-start="2272" selection-end="2272" vertical-scroll-proportion="0.16788322" vertical-offset="1755" max-vertical-offset="2527">
           <folding />
         </state>
       </provider>
