@@ -1,0 +1,16 @@
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">汽车类型列表  总数：{{length}}</h3>
+    </div>
+    <div class="panel-body" ng-controller="cartypeControl">
+        <table class="table"  ngd-click="itemClick($event)" selector="tr">
+            <thead>
+            <tr><td></td><td>name</td><td>Eng</td><td>key</td><td>lock</td></tr>
+            </thead>
+            {{#each cartypes}}
+            <tr rel="key:{{key}},cname:{{cname}}"><td>{{@index}}</td><td>{{cname}}</td><td>{{eng}}</td><td>{{key}}</td><td><a  href="#" rel="id:1">{{#if lock}}yes{{else}}no{{/if}}</a></td></tr>
+            {{/each}}
+        </table>
+    </div>
+</div>

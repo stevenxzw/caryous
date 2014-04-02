@@ -1,0 +1,12 @@
+﻿<h1>文章列表</h1>
+        -----
+{{doc}}
+        -----
+{{#each entries}}
+<div>-----------------nodejs server-------------------------</div>
+<p>
+    <a href="/article/{{id}}">{{title}}</a><br/>
+    <img src="/images/1.gif" />
+    Published: {{published}}
+</p>
+{{/each}}

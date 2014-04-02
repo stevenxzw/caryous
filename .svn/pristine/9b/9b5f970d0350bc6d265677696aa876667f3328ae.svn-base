@@ -1,0 +1,40 @@
+/**
+ * Created by zhiwen on 14-3-19.
+ */
+(function(){
+    var _debug = global._debug,
+        mongo = require('./mongo-skin.js').skin;
+
+    exports.initClass = {
+        //导入汽车类型
+        importCarType : function(req, res){
+            mongo.add('cartype', require('./../data/cartype.js').cartype, function(err, result){
+                if(err){
+                    _debug && console.log('add---cartype---error');
+                    throw err;
+                }
+                _debug && console.log('add---cartype---success');
+                res && res.send('add---cartype---success!');
+            });
+
+        },
+        exportCarType : function(req, res){
+
+        },
+        //用户创建
+        initUsers : function(req, res){
+            mongo.add('user', require('./../data/users.js').users, function(err, result){
+                if(err){
+                    _debug && console.log('add---users---error');
+                    throw err;
+                }
+                _debug && console.log('add---users---success');
+                res && res.send('add---users---success!');
+            });
+        }
+
+
+
+    };
+
+})()

@@ -1,0 +1,71 @@
+/**
+ * Created by zhiwen on 14-3-24.
+ */
+
+(function(CY, $$, win){
+
+    var util = CY['Util'],
+        Event = CY['Event'],
+        Tpl = CY['Tpl'];
+    var _debug = config._debug;
+
+    var myApp = angular.module('myApp',['DelegateEvents'], function($interpolateProvider) {
+        $interpolateProvider.startSymbol('<%');
+        $interpolateProvider.endSymbol('%>');
+    });
+
+    console.log('pageReady');
+    //angular.element(document).ready(function() {
+        var action = config.action;
+        switch(action){
+
+            case 'admin/login' :
+                win.loginControl = function($scope,$http){
+                    $scope.master= {};
+                    $scope.login = function(user){
+                        var md = $scope.master = angular.copy(user);
+                        if(md && md.username && md.pwd){
+                            $http.post('/api/login',user).success(function(data, status, headers, config){
+                               if(data.err === 0){
+                                   location.href = '/admin';
+                                   console.log('success');
+                                   $scope.msg = 'success';
+                               }else{
+                                   $scope.msg = data.msg;
+                               }
+                            }).error(function(data, status, headers, config){
+                                    $scope.msg = '网络错误';
+                            });
+                        }
+                    }
+                }
+                break;
+            case 'admin/cars' :
+
+                win.cartypeControl = function($scope,$http,$compile){
+                    $scope.cl = function($e){
+                        debugger;
+                    }
+
+
+                    $scope.itemClick = function(e, item) {
+                        e.preventDefault();
+                        var rel = new Event({target:e.target, end:e.currentTarget});
+                        _debug && console.log(rel);
+                        if(!rel.q) return;
+                        $(Tpl.parse(Tpl.get('modal'),{title:rel.get('cname')})).appendTo('body').modal('toggle')
+                        // do something...
+
+                        // 注：
+                        // e 原始的event对象，但是增加了delegationTarget => 代理target元素
+                        //
+                        // 对于selector这块，如果引用了jQuery的话，则支持的是jquery的选择器
+                        // 对于支持matchesSelector的浏览器来说，支持的就是标准的选择器；
+                        // 否则的话只能支持tagName...
+                    };
+                }
+                break;
+        }
+   // });
+
+})(Caryous, jQuery, window);

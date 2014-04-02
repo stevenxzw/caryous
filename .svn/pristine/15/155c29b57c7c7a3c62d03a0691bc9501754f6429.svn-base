@@ -1,0 +1,59 @@
+/**
+ * Created by zhiwen on 14-3-18.
+ * 工具类
+ */
+(function(){
+
+    exports.util = {
+
+        deepClone : function(o){
+            var type = this.getType(o), newo;
+            if(type === 'array'){
+                newo = [];
+                for(var i=0,len = o.length;i<len;i++){
+                    newo.push(this.deepClone(o[i]));
+                }
+            }else if(type === 'object'){
+                newo = {};
+                for(var p in o){
+                    newo[p]=this.deepClone(o[p]);
+                }
+            }else return o;
+            return newo;
+        },
+
+        //简单继承
+        extend : function(destination, source) {
+            for (var property in source)
+                destination[property] = source[property];
+            return destination;
+        },
+        //读取变量类型
+        getType : function(o) {
+            return ((_t = typeof(o)) == "object" ? o==null && "null" || Object.prototype.toString.call(o).slice(8,-1):_t).toLowerCase();
+        },
+
+        //ajax请求结果结构化
+        resultCollection : function(err,code, result){
+            if(err){
+                return {err:code || 10000, msg : err, raw : {}};
+            }
+            return {err:0, msg:'', raw : result};
+        },
+
+        //取http请求参数
+        getHttpRequestParams : function(req){
+            var body = req.body, query  = req.query, params = {};
+            function foreach(res){
+                for(var k in res){
+                    if(k !== '__proto__'){
+                        params[k] = res[k];
+                    }
+                }
+            }
+            foreach(body);
+            foreach(query);
+            return params;
+        }
+    };
+})();

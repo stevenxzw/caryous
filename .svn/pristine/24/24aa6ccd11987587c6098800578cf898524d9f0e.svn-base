@@ -1,0 +1,33 @@
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">汽车列表</h3>
+    </div>
+    <div class="panel-body" ng-controller="carsControl">
+        <div class="list-group" ngd-click="itemClick($event)"  selector="div">
+            <div class="list-group-item">
+                <div>#index</div>
+                <div>img</div>
+                <div>name</div>
+                <div>id</div>
+                <div>pid</div>
+                <div>lock</div>
+            </div>
+            {{#each cars}}
+            <div class="list-group-item" rel="id:{{id}},name:{{showName}}">
+                <div>{{@index}}</div>
+                <div>{{#if img}}yes{{else}}--{{/if}}</div>
+                <div>{{showName}}</div>
+                <div>{{id}}</div>
+                <div>{{pid}}</div>
+                <div>{{#if lock}}yes{{else}}no{{/if}}</div>
+                <div class="car-change"><a rel="" href="#">修改</a></div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
+
+<script>
+    var cartypes = '{{{json cartypes}}}';
+</script>

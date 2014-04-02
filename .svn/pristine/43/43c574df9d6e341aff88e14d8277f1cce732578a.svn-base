@@ -1,0 +1,20 @@
+<div class="bs-example">
+    <div ng-controller="Ctrl2">
+          Date format: <input ng-model="format"><hr/>
+          Current time is: <span my-current-time="format"></span>    
+    </div>
+    <div class="panel panel-default"  ng-controller="cartypeControl"> 
+        <!-- Default panel contents -->
+        <div class="panel-heading">汽车类型列表  总数：{{length}}</div>
+
+        <!-- Table -->
+        <table class="table">
+            <thead>
+            <tr><td>key</td><td>Eng</td><td>name</td><td>lock</td></tr>
+            </thead>
+            {{#each cartypes}}
+                <tr><td>{{key}}</td><td>{{eng}}</td><td>{{cname}}</td><td><a ng-click="lockClick({{key}})" href="#">{{#if lock}}yes{{else}}no{{/if}}</a></td></tr>
+            {{/each}}
+        </table>
+    </div>
+</div>

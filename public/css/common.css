@@ -1,0 +1,14 @@
+/*------------------ car page -------------------------------*/
+.list-group-item{
+    clear : float;
+    height: 40px;
+}
+.list-group-item div{
+    width : 15%;
+    float : left;
+}
+.list-group-item div.car-change{
+
+    width : 9%;
+
+}

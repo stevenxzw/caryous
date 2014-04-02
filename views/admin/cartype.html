@@ -1,0 +1,36 @@
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h3 class="panel-title">汽车类型列表  总数：{{length}}</h3>
+    </div>
+    <div class="panel-body" ng-controller="cartypeControl">
+        <div class="list-group" ngd-click="itemClick($event)"  selector="div">
+            <div class="list-group-item">
+                <div>#index</div>
+                <div>img</div>
+                <div>cname</div>
+                <div>Eng</div>
+                <div>key</div>
+                <div>lock</div>
+            </div>
+            {{#each cartypes}}
+            <div class="list-group-item" rel="key:{{key}},cname:{{cname}}">
+                <div>{{@index}}</div>
+                <div>{{#if img}}yes{{else}}--{{/if}}</div>
+                <div>{{cname}}</div>
+                <div>{{eng}}</div>
+                <div>{{key}}</div>
+                <div>{{#if lock}}yes{{else}}no{{/if}}</div>
+                <div class="car-change"><a rel="" href="#">修改</a></div>
+            </div>
+            {{/each}}
+        </div>
+
+
+
+    </div>
+</div>
+
+<script>
+    var cartypes = JSON.parse('{{{json cartypes}}}');
+</script>

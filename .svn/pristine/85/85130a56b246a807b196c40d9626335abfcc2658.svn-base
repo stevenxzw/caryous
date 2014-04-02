@@ -1,0 +1,7 @@
+<h1>汽车类型列表</h1>
+<h2>总数：{{length}}</h2>
+{{#each cartypes}}
+<p>
+    <span>{{key}} </span>--------<span>{{eng}} </span>-----------<span>{{cname}} </span>
+</p>
+{{/each}}

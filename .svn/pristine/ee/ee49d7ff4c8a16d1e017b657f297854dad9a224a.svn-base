@@ -1,0 +1,79 @@
+/**
+ * Created by zhiwen on 14-3-24.
+ */
+
+(function(){
+    var myApp = angular.module('myApp', [], function($interpolateProvider) {
+        $interpolateProvider.startSymbol('<%');
+        $interpolateProvider.endSymbol('%>');
+    });
+
+    console.log('pageReady');
+    //angular.element(document).ready(function() {
+        var action = path.action;
+        switch(action){
+
+            case 'admin/login' :
+                window.loginControl = function($scope,$http){
+                    $scope.master= {};
+                    $scope.login = function(user){
+                        var md = $scope.master = angular.copy(user);
+                        if(md && md.username && md.pwd){
+                            $http.post('/api/login',user).success(function(data, status, headers, config){
+                               if(data.err === 0){
+                                   location.href = '/admin';
+                                   console.log('success');
+                                   $scope.msg = 'success';
+                               }else{
+                                   $scope.msg = data.msg;
+                               }
+                            }).error(function(data, status, headers, config){
+                                    $scope.msg = '网络错误';
+                            });
+                        }
+                    }
+                }
+                break;
+            case 'admin/cars' :
+                window.cartypeControl = function($scope,$http,$compile){
+                    $scope.lockClick = function(param){
+                        debugger;
+                    }
+                    $scope.format = 'M/d/yy h:mm:ss a';
+                }
+
+           window.Ctrl2 =  function($scope) {
+                $scope.format = 'M/d/yy h:mm:ss';
+            }
+                myApp.directive('myCurrentTime', function($timeout, dateFilter) {
+                return function(scope, element, attrs) {
+                    var format,  
+                    timeoutId; 
+                    function updateTime() {
+                        element.text(dateFilter(new Date(), format));      
+                    }
+                    scope.$watch(attrs.myCurrentTime, function(value) {
+                        format = value;
+                        updateTime();
+                    });
+
+                    function updateLater() {
+
+                        timeoutId = $timeout(function() {          
+                            updateTime();
+
+                            updateLater(); 
+                        }, 1000);
+                    }
+                    element.bind('$destroy', function() {
+                        $timeout.cancel(timeoutId);     
+                    });
+                    updateLater();
+                    }
+
+                })
+                break;
+        }
+   // });
+
+})()

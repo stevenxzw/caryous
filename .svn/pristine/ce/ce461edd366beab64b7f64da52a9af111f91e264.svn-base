@@ -1,0 +1,17 @@
+<link href="/css/login.css" rel="stylesheet">
+<div ng-controller="loginControl">
+    <form class="form-signin" role="form">
+        <h2 class="form-signin-heading">管理员登录</h2>
+        <input type="text" class="form-control" ng-model="user.username" value="admin"  placeholder="username" required autofocus>
+
+        <input type="password" class="form-control"  ng-model="user.pwd" value="123456"  placeholder="Password" required>
+        <label class="checkbox">
+            <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <label>
+            <%msg%>
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="login(user)">Sign in</button>
+    </form>
+</div>
+

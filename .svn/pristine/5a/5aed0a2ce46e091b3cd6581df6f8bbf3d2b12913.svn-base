@@ -1,0 +1,40 @@
+/**
+ * Created by Administrator on 14-3-25.
+ * 后台公共数据
+ */
+
+(function(){
+    var cutil = require('./../func/cutil').util;
+    exports.pd = {
+        getPd : function(d){
+            return  cutil.extend(d||{},adminPublicData);
+        }
+    };
+    var adminPublicData = {
+
+        project_name : 'CarYous',
+
+        items : [{
+            cls :'',
+            item : 'Home',
+
+            uri : '/admin'
+
+        },{
+            cls : '',
+            item : 'Users',
+            uri : '/admin/users'
+        },{
+            cls : '',
+            item : 'Cars',
+            uri : '/admin/cars'
+
+        },{
+            cls : '',
+            item : 'Park',
+            uri : '/admin/park'
+        }]
+
+    };
+
+})()
