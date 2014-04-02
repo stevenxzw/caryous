@@ -3,16 +3,18 @@
  * Module dependencies.
  */
 
+//设置全局变量
+//global._debug = true;//测试状态
+//global._local = true;//本地开发
+
+
+
 var express = require('express');
 var routes = require('./routes');
 var api = require('./routes/api');
 var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
-
-//var connectDb = require('./mongoTest.js');
-
-
 
 
 
@@ -22,19 +24,79 @@ var hbs = require('hbs');
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
+app.use(express.logger());
+// 一个简单的 logger
+// 开发环境
+if ('development' === app.get('env')) {
+    app.use(express.errorHandler());
+    global._debug = true;//测试状态
+    global._local = true;//本地开发
+
+
+}
+hbs.registerHelper('json', function(context) {
+    return JSON.stringify(context);
+});
+
+
+// 生产环境
+if ('production' === app.get('env')) {
+    global._debug = false;//测试状态
+    global._local = false;//本地开发
+};
+app.set('title', 'caryous管理后台');
+
+app.use(express.cookieParser('123'));
+app.use(express.session({cookie:{maxAge:2000000,secret: 'node'}}));
+/*
+app.use(function(req, res, next){
+    // Website you wish to allow to connect
+    res.setHeader('Access-Control-Allow-Origin','http://dev.caryous.com');
+
+    // Request methods you wish to allow
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+
+    // Request headers you wish to allow
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+
+    // Set to true if you need the website to include cookies in the requests sent
+    // to the API (e.g. in case you use sessions)
+    res.setHeader('Access-Control-Allow-Credentials', true);
+
+    // Pass to next layer of middleware
+    next();
+
+});
+*/
 app.engine('html', hbs.__express);
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
+//app.use(express.cookieParser());
+app.use(express.bodyParser());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
-// development only
-if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
-}
+
+/*
+ //设置跨域访问
+ app.all('*', function(req, res, next) {
+ res.header("Access-Control-Allow-Origin", "*");
+ res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+ res.header("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+ res.header("X-Powered-By",' 3.2.1')
+ res.header("Content-Type", "application/json;charset=utf-8");
+ next();
+ });
+ */
+
+
+
+
+
+
 //connectDb.connectDb();
 /*
 app.get('/', routes.index);
@@ -64,6 +126,36 @@ app.get('/', routes.index);
 app.get('/list', user.list);
  */
 
+//var conn = require('./public/javascripts/conn');
+//var conn = require('./public/javascripts/connSkin');
+//var DB  = new conn.seDB({connectType:'lab'});
+
+//DB.insert('test1', {id:'001', accout:'test001'}, function(){ console.log('ok');DB.read();});
+
+
+
+
+app.use(express.static('public'));
+app.use(express.bodyParser());
+app.use(express.cookieParser());
+
+var myroute = require('./routes/myroute').routefn;
+myroute.globalRoute(app);
+
+/*
+app.listen(app.get('port'),'dev.caryous.com', function(){
+    console.log('Express server listening on port ' + app.get('port'));
+});
+*/
+app.listen(app.get('port'), function(){
+    console.log('Express server listening on port ' + app.get('port'));
+});
+/*
+//app.get('/', function(req, res) {
+//    debugger;
+//})
+
+// 加载数据模块
 var Server = require('mongodb').Server,
     mongo = require('mongodb');
 
@@ -72,11 +164,6 @@ var dbport = 33709;
 var dbserver = new Server(dbhost,dbport, {auto_reconnect:true});
 var dbconnector = new mongo.Db('stevenxie',dbserver,{safe:true});
 var mdb;
-
-
-app.use(express.static('public'));
-app.use(express.bodyParser());
-// 加载数据模块
 var blogEngine = require('./data/blog');
 app.get('/', function(req, res) {
     var _db =  mdb.collection('test1');
@@ -105,7 +192,12 @@ app.get('/', function(req, res) {
 
    // res.render('index',{title:"最近文章", entries:blogEngine.getBlogEntries()});
 });
-
+app.get('/detail', function(req, res){
+    var conn = require('./public/javascripts/mongo-skin').skin;
+    conn.read('cartype','', function(data){});
+    //conn.update('', '', '', conn.read);
+    res.render('detail',{title:"详细内容"});
+});
 
 dbconnector.open(function(err,db){
     if(err) throw err;
@@ -116,11 +208,9 @@ dbconnector.open(function(err,db){
             console.log('Express server listening on port ' + app.get('port'));
         });
         console.log("Server started on port 3000");
-        console.log(err);
-        console.log(success);
     });
 });
-
+*/
 //app.listen(app.get('port'), function(){
 //    console.log('Express server listening on port ' + app.get('port'));
 //});
