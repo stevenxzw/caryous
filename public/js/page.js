@@ -13,15 +13,74 @@
         $interpolateProvider.startSymbol('<%');
         $interpolateProvider.endSymbol('%>');
     });
+    myApp.service('reverseService',function(){
+        this.reverse = function(text){
+            return text.split(" ");
+        }
+    }).factory('alertService', function($rootScope) {
+            var alertService = {};
+
+            // 创建一个全局的 alert 数组
+            $rootScope.alerts = [{ type: 'error', msg: 'Oh snap! Change a few things up and try submitting again.' },
+                { type: 'success', msg: 'Well done! You successfully read this important alert message.' }];
+
+            alertService.add = function(type, msg) {
+                $rootScope.alerts.push({'type': type, 'msg': msg, 'close': function(){ alertService.closeAlert(this); }});
+            };
+
+            alertService.closeAlert = function(alert) {
+                alertService.closeAlertIdx($rootScope.alerts.indexOf(alert));
+            };
+
+            alertService.closeAlertIdx = function(index) {
+                $rootScope.alerts.splice(index, 1);
+            };
+
+            return alertService;
+        }).directive('hello', function() {
+            return {
+                restrict: 'E',
+                template: '<div>Hi there</div>',
+                replace: true
+            };
+        }).directive('mySvg', function($rootScope){
+
+            return {
+                controller : function($attrs,$element){
+                    debugger;
+                    $element.html('=============');
+
+                },
+                link:function(scope,element,attrs) {
+                    element.html('----------------');
+                    opened = false;
+                    element.bind("click", toogle);
+                    element.addClass("closed");
+                    function toogle() {
+                        opened = !opened;
+                        element.removeClass(opened ? "closed" : "opened");
+                        element.addClass(opened ? "opened" : "closed");
+                    }
+                },
+                    restrict: 'A',
+                template: '<div>Hi there</div>',
+                replace: true
+            };
+        });
+
 
     console.log('pageReady');
     //angular.element(document).ready(function() {
         var action = config.action;
         switch(action){
-
             case 'admin/login' :
-                win.loginControl = function($scope,$http){
+                myApp.controller('loginControl', ['$scope', '$http', 'reverseService', 'alertService', function($scope, $http, reverseService, alertService){
+                    alertService.add('success', 'adfaf');
                     $scope.master= {};
+                    $scope.$watch('user.username', function(v){
+                       console.log(v);
+
+                    })
                     $scope.login = function(user){
                         var md = $scope.master = angular.copy(user);
                         if(md && md.username && md.pwd){
@@ -38,7 +97,7 @@
                             });
                         }
                     }
-                }
+                }])
                 break;
             case 'admin/cars' :
                 win.carsControl = function($scope,$http,$compile){
@@ -48,7 +107,7 @@
                 break;
             case 'admin/carType' :
                 win.cartypeControl = function($scope,$http,$compile){
-
+                    $scope.cartypes = cartypes;
                     $http.get('/api/cartypeCount').success(function(r){
                         $scope.test = r.raw;
                     });

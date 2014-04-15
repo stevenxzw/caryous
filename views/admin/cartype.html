@@ -24,6 +24,12 @@
                 <div class="car-change"><a rel="" href="#">修改</a></div>
             </div>
             {{/each}}
+------------------------------------------
+            <div ng-repeat="cartype in cartypes" class="list-group-item">
+                <div><%$index%></div>
+                <div><%cartype.cname%></div>
+            </div>
+
         </div>
 
 
