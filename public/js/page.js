@@ -9,7 +9,7 @@
         Tpl = CY['Tpl'];
     var _debug = config._debug;
 
-    var myApp = angular.module('myApp',['DelegateEvents'], function($interpolateProvider) {
+    var myApp = angular.module('myApp',['DelegateEvents', 'ui.bootstrap'], function($interpolateProvider) {
         $interpolateProvider.startSymbol('<%');
         $interpolateProvider.endSymbol('%>');
     });
@@ -47,7 +47,6 @@
 
             return {
                 controller : function($attrs,$element){
-                    debugger;
                     $element.html('=============');
 
                 },
@@ -97,6 +96,19 @@
                             });
                         }
                     }
+
+
+                    $scope.singleModel = 1;
+
+                    $scope.radioModel = 'Middle';
+
+                    $scope.checkModel = {
+                        left: false,
+                        middle: true,
+                        right: false
+                    };
+
+
                 }])
                 break;
             case 'admin/cars' :

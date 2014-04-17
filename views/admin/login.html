@@ -1,6 +1,6 @@
 <link href="/css/login.css" rel="stylesheet">
+<div><a href="http://angular-ui.github.io/bootstrap/">UI Bootstrap</a></div>
 <div ng-controller="loginControl">
-    <div my-svg="s"></div>
     <form class="form-signin" role="form" ng-init="user={username:'admin',pwd:'123456'}">
         <h2 class="form-signin-heading">管理员登录</h2>
         <input type="text" class="form-control" ng-model="user.username" value="admin" id="username"  placeholder="username" required autofocus>
@@ -14,5 +14,25 @@
         </label>
         <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="login(user)">Sign in</button>
     </form>
+    <h4>Single toggle</h4>
+    <pre><%singleModel%></pre>
+    <button type="button" class="btn btn-primary" ng-model="singleModel" btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
+        Single Toggle
+    </button>
+    <h4>Checkbox</h4>
+    <pre><%checkModel%></pre>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary" ng-model="checkModel.left" btn-checkbox>Left</button>
+        <button type="button" class="btn btn-primary" ng-model="checkModel.middle" btn-checkbox>Middle</button>
+        <button type="button" class="btn btn-primary" ng-model="checkModel.right" btn-checkbox>Right</button>
+    </div>
+    <h4>Radio</h4>
+    <pre><%radioModel%></pre>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary" ng-model="radioModel" btn-radio="'Left'">Left</button>
+        <button type="button" class="btn btn-primary" ng-model="radioModel" btn-radio="'Middle'">Middle</button>
+        <button type="button" class="btn btn-primary" ng-model="radioModel" btn-radio="'Right'">Right</button>
+    </div>
 </div>
+
 
