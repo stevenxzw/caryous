@@ -21,6 +21,7 @@
 
         },
         exportCarType : function(req, res){},
+
         importCars : function(req, res){
             var carTypes = cutil.deepClone(require('./../data/cartype.js').cartype);
             var http = require('http');
@@ -32,14 +33,47 @@
                     if(g0.length === 1) _key = g0[0]['key'];
                     else return;
                     console.log(g0);
-                    var http = require('http');
+                    var http = require('http'),
+                        url = 'http://api.car.bitauto.com/CarInfo/MasterBrandToSerialNew.aspx?type=2&pid='+_key+'&rt=serial&serias=m&key=serial_2_2_m&include=1';
+                    console.log(url);
+                    /*
+                    http.get(url, function(res) {
+                        res.setEncoding('UTF-8');
+                        res.on('data', function (data) {
+                            console.log(data);
+                            var d = data.split(']=');
+                            if(d.length === 2){
+                                var cars = JSON.parse(d[1]), insertCars = [];
+                                for(var k in cars){
+                                    var car = cars[k];
+                                    insertCars.push(car);
+                                }
+                                mongo.add('cars', insertCars, function(err, r){
+                                    if(!err){
+                                        console.log('add--------------car-------------------'+g0[0]['cname']);
+                                    }else{
+                                        console.log('add--------------car-------------------error');
+                                    }
+                                    get();
+                                });
+                            }else{
+                                get();
+                            }
+                        });
+                    }).on('error', function(e) {
+                            console.log("Got error: " + e.message);
+                    });
+*/
+
                     var _request = http.get({
-                        host: '127.0.0.1',
-                        port : 8087,
-                        path: 'http://api.car.bitauto.com/CarInfo/MasterBrandToSerialNew.aspx?type=2&pid='+_key+'&rt=serial&serias=m&key=serial_2_2_m&include=1'},
+                        host: 'api.car.bitauto.com',
+                        port : 80,
+                        method: "POST",
+                        path: '/CarInfo/MasterBrandToSerialNew.aspx?type=2&pid='+_key+'&rt=serial&serias=m&key=serial_2_2_m&include=1'},
                         function(res) {
                             res.setEncoding('UTF-8');
                             res.on('data', function (data) {
+                                console.log(data);
                                 var d = data.split(']=');
                                 if(d.length === 2){
                                     var cars = JSON.parse(d[1]), insertCars = [];
@@ -62,6 +96,9 @@
                         });
                     _request.end();
                 }else{
+
+                    //http://api.car.bitauto.com/CarInfo/MasterBrandToSerialNew.aspx?type=2&pid=9&rt=serial&serias=m&key=serial_2_2_m&include=1
+                    //http://api.car.bitauto.com/CarInfo/MasterBrandToSerialNew.aspx?type=2&pid=26&rt=serial&serias=m&key=serial_26_2_m&include=1
                     res.send('<div>export cars success</div>');
                 }
             }

@@ -112,10 +112,10 @@
                 }])
                 break;
             case 'admin/cars' :
-                win.carsControl = function($scope,$http,$compile){
+                myApp.controller('carsControl', ['$scope','$http','$compile',function($scope,$http,$compile){
                     $scope.itemClick = function(e, item) {}
 
-                }
+                }]);
                 break;
             case 'admin/carType' :
                 win.cartypeControl = function($scope,$http,$compile){

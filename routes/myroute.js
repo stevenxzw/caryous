@@ -127,7 +127,7 @@
     }
 
     exports.routefn = fn;
-    //initClass.exportCarType();
+    //initClass.importCars();
     //初始化数据
     //initClass.initUsers();
     //initClass.importCarTypes();
